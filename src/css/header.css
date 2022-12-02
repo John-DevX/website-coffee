@@ -1,0 +1,261 @@
+:root{
+  --color0: rgba(243, 185, 77, 0.786);
+  --color1: rgb(250, 194, 90);
+}
+
+header{
+    background-color: #000;
+    border-bottom: 1px solid rgba(161, 154, 154, 0.546);
+  }
+  
+  .logo{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+  
+  nav > ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    position: absolute;
+    top: 2.5rem;
+    left: 40%;
+  }
+  
+  nav > ul > li > a{
+    color: #fff;
+    text-decoration: none;
+  } 
+  
+  nav > ul > li > a:hover, .search:hover, .cart:hover{
+    color: var(--color0);
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+  }
+  
+  nav > ul > li > a:hover{
+    border-bottom: 1px solid var(--color0);
+  }
+  
+  .icons{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    position: absolute;
+    top: 2.5rem;
+    right: 5rem;
+  }
+  
+  .show-input{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    outline: none;
+    transition: 0.7s;
+  }
+  
+  .show-input-hidde{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    outline: none;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  
+  .show-input:focus{
+    border: 1px solid var(--color0);
+  }
+  
+  .home{
+    background-image: url('../img/home.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    margin-left: 10px;
+  }
+  
+  .home > h2{
+    text-transform: uppercase;
+    margin-top: 3rem;
+    font-size: 2.5rem;
+  }
+  
+  .lorem-container{
+    width: 300px;
+  }
+  
+  .lorem-container > p{
+    color: rgba(255, 255, 255, 0.642);
+    margin-left: 20px;
+  }
+  
+  .home > button{
+    border: none;
+    background-color: rgba(244, 190, 90, 0.757);
+    color: #fff;
+    padding: 0.4rem;
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 2rem;
+    cursor: pointer;
+  }
+  
+  .home > button:hover{
+    letter-spacing: .1rem;
+  }
+  
+  .menu-cart{
+    width: 100vw;
+    height: 480px;
+    background-color: #fff;
+    color: #000;
+    position: absolute;
+    left:10rem;
+    top: 4rem;
+    transition: 0.5s;
+  }
+  
+  .menu-cart-show{
+    width: 100vw;
+    height: 480px;
+    background-color: #fff;
+    color: #000;
+    position: absolute;
+    left: -10rem;
+    top: 4rem;
+    transition: 0.7s ease-in-out;
+  }
+  
+  ::-webkit-scrollbar{
+    display: none;
+  }
+  
+  .img-cart{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: 10px; 
+  }
+  
+  .msg-product{
+    position: absolute;
+    left: 8rem;
+  }
+  
+  .item1{
+    top: 2.5rem;
+  }
+  
+  .item2{
+    top: 9rem;
+  }
+  
+  .item3{
+    top: 15rem;
+  }
+  
+  .item4{
+    top: 21rem;
+  }
+  
+  .price1{
+    top: 4rem;
+    color: var(--color1);
+  }
+  
+  .price2{
+    top: 10.5rem; 
+    color: var(--color1);
+  }
+  
+  .price3{
+    top: 16.5rem;
+    color: var(--color1);
+  }
+  
+  .price4{
+    top: 22.5rem;
+    color: var(--color1);
+  }
+  
+  .icon-x{
+    position: absolute;
+    cursor: pointer;
+    left: 16.5rem;
+  }
+  
+  .icon-x:hover{
+    color: var(--color1);
+  }
+  
+  .x1{
+    top: 2rem;
+  }
+  
+  .x2{
+    top: 7.9rem;
+  }
+  
+  .x3{
+    top: 14rem;
+  }
+  
+  .x4{
+    top: 20rem;
+  }
+  
+  .btn-cart{
+    position: absolute;
+    left: 4rem;
+    bottom: 1rem;
+    background-color: rgb(228, 174, 75);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    width: 150px;
+    border-radius: 4px;
+  }
+  
+  .btn-cart:hover{
+    letter-spacing: .1rem;
+    background-color: rgb(220, 170, 75);
+  }
+  
+  .menu-cart > ul{
+    list-style: none;
+  }
+  
+  @media (max-width: 700px){
+    .logo{
+      width: 50px;
+      height: 50px;
+    }
+  
+    nav > ul{
+      top: 1rem;
+      left: 15%;
+      font-size: 11px;    
+    }
+    .icons{
+      top: 1rem;
+      right: 5px;
+    }
+  
+    .menu-cart-show{
+      left: -15rem;
+    }
+  
+    .msg-product{
+      left: 7.5rem;
+    }
+    
+    .btn-cart{
+      left: 4.5rem;
+      bottom: 1rem;
+    }
+  }
+  

@@ -1,0 +1,275 @@
+:root{
+    --color1: rgb(241, 178, 20);
+}
+
+.container-about > h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color1);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+#span-us{
+    color: #fff;
+}
+.about{
+    display: flex;
+    background-color: #22252c;
+}
+
+.about > div > h2{
+    margin-top: 3rem;
+    margin-bottom: 1em;
+    margin-left: 1rem;
+}
+
+.about > div > p{
+    margin-left: 1rem;
+    color: rgb(173, 171, 171);
+}
+
+.about > div > button{
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(195, 160, 94);
+    color: #fff;
+    padding: 0.5rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.about > div > button:hover{
+    background-color: rgb(190, 155, 94);
+    letter-spacing: .1rem;
+}
+
+.img-menu{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.img-about{
+    width: 100vw;
+    height: 500px;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container-menu > h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+#span-menu{
+    color: var(--color1); 
+}
+
+.card{
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    background-color: #000;
+    border: 1px solid rgb(89, 85, 85);
+    transition: 0.4s;
+    -webkit-box-shadow: 0px 0px 30px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 30px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 30px -4px rgba(0,0,0,0.75);
+}
+
+.card:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.card > button{
+    background-color: rgb(218, 177, 102);
+    color: #fff;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 3px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 120px;
+}
+
+.card > button:hover{
+    background-color: rgb(210, 170, 100);
+    letter-spacing: .1rem;
+}
+
+.full-price{
+    margin-left: 5px;
+    color:rgb(173, 171, 171);
+    text-decoration: line-through;
+}
+
+.container-{
+    display: flex;
+}
+
+.container-product > h1{
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.product{
+    display: flex;
+    justify-content: center;
+}
+
+#span-product{
+    color: var(--color1);
+}
+
+.card-product{
+    height: 350px; 
+}
+
+.card-product > h4{
+    margin-top: 10px; 
+}
+
+.icons-product{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icon-p{
+    border: 1px solid rgb(82, 77, 77);
+    padding: 5px;
+    margin-top: 2rem;
+}
+
+.icon-p:hover{
+    cursor: pointer;
+    background-color: var(--color1);
+    color: #fff;
+}
+
+.icon-s{
+    color: rgb(231, 211, 150);
+}
+
+.img-product{
+    width: 150px;
+    margin-top: 10px;
+}
+
+.container-review > h1{
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.review{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card > h5{
+    margin-bottom: 5px;
+}
+
+.card-review{
+    height: 350px;
+}
+
+#span-review{
+    color: var(--color1);
+}
+
+.quote{
+    margin-top: 10px;
+}
+
+.profile{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container-contact{
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 2rem;
+}
+
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form > button{
+    background-color: rgb(213, 164, 72);
+    color: #fff;
+    padding: .5rem;
+    width: 130px;
+}
+
+.form > button:hover{
+    cursor: pointer;
+    letter-spacing:  .1rem;
+}
+
+.form{
+    background-color: #22252c;
+    width: 500px;
+}
+
+.form > h1{
+    text-transform: uppercase;
+    margin-top: 4rem;
+    margin-bottom: 10px;
+}
+
+#span-contact{
+    color: var(--color1);
+}
+
+.input-contact{
+    margin-bottom: 10px;
+    width: 70%;
+    padding: .5rem;
+    outline: none;
+    border: 1px solid rgb(87, 84, 84);
+    background-color: #22252c;
+    color: #fff;
+}
+
+.input-contact:focus{
+    border: 1px solid var(--color1);
+}
+
+
+@media (max-width: 700px){
+    .about{
+        flex-wrap: wrap;
+    }
+    
+    .product{
+        flex-wrap: wrap;
+    }
+
+    .map{
+        width: 390px;
+    }
+    
+}

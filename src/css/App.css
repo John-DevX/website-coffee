@@ -1,0 +1,12 @@
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+}
+
+body{
+  /* background-color: #282c34; */
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
