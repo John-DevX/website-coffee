@@ -33,10 +33,12 @@ export default function Header() {
                             </ul>
                         </nav>
                     </section>
+
                 <section className='icons'>
                 <FontAwesomeIcon  onClick={showInput} className='search' icon={faSearch} />
                 <input className={show ? 'show-input' : 'show-input-hidde' } type="text" />
                 <FontAwesomeIcon onClick={menushow} className='cart' icon={faShoppingCart} />
+
                     <div className= {active ? 'menu-cart-show': 'menu-cart' }>
                         <ul>
                             <li>
@@ -63,6 +65,7 @@ export default function Header() {
                         </ul>
                         <button className='btn-cart'>Checkout Now</button>
                     </div>
+                    
                 </section>
             <section className='home' id='home'>
                 <h2>Fresh coffe in <br/> the morning </h2>

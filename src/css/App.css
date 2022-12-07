@@ -3,10 +3,12 @@ html{
   scroll-padding-top: 9rem;
 }
 
+html,body{
+  overflow-x: hidden !important;
+}
+
 body{
-  /* background-color: #282c34; */
   background-color: #000;
   color: #fff;
-  overflow-x: hidden;
 }
 
