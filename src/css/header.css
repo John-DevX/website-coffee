@@ -108,25 +108,26 @@ header{
   }
   
   .menu-cart{
-    width: 100vw;
+    width: 300px;
     height: 480px;
     background-color: #fff;
     color: #000;
-    position: absolute;
-    left:10rem;
-    top: 4rem;
+    position: fixed;
+    right: -30rem;
+    top: 7rem;
     transition: 0.5s;
   }
   
   .menu-cart-show{
-    width: 100vw;
+    width: 300px;
     height: 480px;
     background-color: #fff;
     color: #000;
-    position: absolute;
-    left: -10rem;
-    top: 4rem;
+    position: fixed;
+    right: 0;
+    top: 7rem;
     transition: 0.7s ease-in-out;
+    opacity: 1;
   }
   
   ::-webkit-scrollbar{
@@ -240,15 +241,12 @@ header{
       left: 15%;
       font-size: 11px;    
     }
+
     .icons{
       top: 1rem;
       right: 5px;
     }
-  
-    .menu-cart-show{
-      left: -15rem;
-    }
-  
+
     .msg-product{
       left: 7.5rem;
     }
