@@ -81,14 +81,12 @@
     background-color: #000;
     border: 1px solid rgb(89, 85, 85);
     transition: 0.4s;
-    -webkit-box-shadow: 0px 0px 30px -4px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 30px -4px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 30px -4px rgba(0,0,0,0.75);
 }
 
 .card:hover{
     background-color: #fff;
     color: #000;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
 }
 
 .card > button{
@@ -148,6 +146,7 @@
     border: 1px solid rgb(82, 77, 77);
     padding: 5px;
     margin-top: 2rem;
+    transition: 0.3s;
 }
 
 .icon-p:hover{
@@ -218,12 +217,15 @@
     flex-wrap: wrap;
 }
 
-.form > button{
+.form > form button{
     background-color: rgb(213, 164, 72);
     color: #fff;
     padding: .5rem;
     width: 130px;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .form > button:hover{
@@ -234,6 +236,24 @@
 .form{
     background-color: #22252c;
     width: 500px;
+    position: relative;
+}
+
+.icon-form{
+    position: absolute;
+    left: 5rem;
+}
+
+.user{
+    top: 7rem;
+}
+
+.email{
+    top: 10.4rem;
+}
+
+.iphone{
+    top: 13.6rem;
 }
 
 .form > h1{
@@ -249,9 +269,11 @@
 .input-contact{
     margin-bottom: 10px;
     width: 70%;
-    padding: .5rem;
+    padding: .8rem;
+    padding-left: 2rem;
     outline: none;
     border: 1px solid rgb(87, 84, 84);
+    border-radius: 4px;
     background-color: #22252c;
     color: #fff;
 }
@@ -272,6 +294,10 @@
 
     .map{
         width: 390px;
+    }
+
+    .icon-form{
+        left: 4rem;
     }
     
 }

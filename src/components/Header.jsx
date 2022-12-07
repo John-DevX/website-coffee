@@ -49,17 +49,17 @@ export default function Header() {
                             </li>
                             <li> <img className='img-cart' src={coffee2} alt="coffee" />
                                  <span className='msg-product item2'>Cart item 02</span>
-                                 <span className='msg-product price2'>$15.99</span>
+                                 <span className='msg-product price2'>$20.99</span>
                                  <FontAwesomeIcon className='icon-x x2' icon={faX}/>
                             </li>
                             <li> <img className='img-cart' src={coffee3} alt="coffee" />
-                                 <span className='msg-product item3'>Cart item 01</span>
-                                 <span className='msg-product price3'>$15.99</span>
+                                 <span className='msg-product item3'>Cart item 03</span>
+                                 <span className='msg-product price3'>$8.99</span>
                                  <FontAwesomeIcon className='icon-x x3' icon={faX}/>
                             </li>
                             <li> <img className='img-cart' src={coffee4} alt="coffee" />
-                                 <span className='msg-product item4'>Cart item 01</span>
-                                 <span className='msg-product price4'>$15.99</span>
+                                 <span className='msg-product item4'>Cart item 04</span>
+                                 <span className='msg-product price4'>$10.99</span>
                                  <FontAwesomeIcon className='icon-x x4' icon={faX}/>
                             </li>
                         </ul>

@@ -12,8 +12,11 @@ import quote from '../img/quote.png';
 import profile1 from '../img/profile1.png';
 import profile2 from '../img/profile2.jpg';
 import profile3 from '../img/profile3.jpg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faEyeSlash, faHeart, faShoppingCart, faStar} from '@fortawesome/free-solid-svg-icons';
+import { MdEmail } from 'react-icons/md';
+import { FaUserAlt } from 'react-icons/fa';
+import { HiPhone } from 'react-icons/hi';
 export default function Main() {
   return (
     <div>
@@ -198,6 +201,9 @@ export const Review = ()=>{
 }
 
 export const Contact = ()=>{
+    const pauseEvent = e =>{
+        e.preventDeffault();
+    }
     return(
        <div className='container-contact' id='contact'>
             <h1><span id='span-contact'>Contact </span>Us</h1>
@@ -209,17 +215,20 @@ export const Contact = ()=>{
                     <h1>Get in touch</h1>
                     <form>
                         <div>
-                            <input type="text" className='input-contact' placeholder='Name'/>
+                            <input type="text" className='input-contact' placeholder='Name' required/>
+                            <FaUserAlt className='icon-form user'/>
                         </div>
                         <div>
-                            <input type="email" className='input-contact' placeholder='Email'/>
+                            <input type="email" className='input-contact' placeholder='Email' required/>
+                            <MdEmail className='icon-form email' />
                         </div>
 
                         <div>
-                            <input type="number"  className='input-contact' placeholder='Number'/>
+                            <input type="number"  className='input-contact' placeholder='Number' required/>
+                            <HiPhone className='icon-form iphone' />
                         </div>
+                    <button onClick={pauseEvent}>Contact Now</button>
                     </form>
-                    <button>Contact Now</button>
                 </div>
             </section>
         </div> 
