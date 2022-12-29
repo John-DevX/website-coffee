@@ -1,3 +1,9 @@
-# Deploy
+# Website Coffee 
 
-## https://website-coffee.netlify.app/
+## Technologies Used
+
+ * React.js
+
+## Deploy
+
+> https://website-coffee.netlify.app/ 🌐
